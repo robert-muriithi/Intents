@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/btn_StartActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Start a new Activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_startCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Call my favourite person"
+            app:layout_constraintEnd_toEndOf="@+id/btn_StartActivity"
+            app:layout_constraintStart_toStartOf="@+id/btn_StartActivity"
+            app:layout_constraintTop_toBottomOf="@+id/btn_StartActivity" />
+
+        <Button
+            android:id="@+id/btn_startText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Text my mum"
+            app:layout_constraintEnd_toEndOf="@+id/btn_startCall"
+            app:layout_constraintStart_toStartOf="@+id/btn_startCall"
+            app:layout_constraintTop_toBottomOf="@+id/btn_startCall" />
+
+        <Button
+            android:id="@+id/btn_goToGithubActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Go to my Github account"
+            app:layout_constraintEnd_toEndOf="@+id/btn_startText"
+            app:layout_constraintStart_toStartOf="@+id/btn_startText"
+            app:layout_constraintTop_toBottomOf="@+id/btn_startText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
